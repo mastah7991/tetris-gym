@@ -1,4 +1,10 @@
 /venv/
 /.idea/
-/Env/__pycache__/
-/Game/__pycache__
+/gym_tetris_simple/Env/__pycache__/
+/gym_tetris_simple/Game/__pycache__
+/.ipynb_checkpoints/
+/Untitled.ipynb
+/build/
+/dist/
+/gym_tetris_simple.egg-info/
+/gym_tetris_simple/
