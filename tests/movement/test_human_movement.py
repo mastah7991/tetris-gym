@@ -18,7 +18,6 @@ import keyboard as computer_keyboard
     (' ', constants.DOWN_FAST),
     ('w', constants.ROTATE_R),
 ])
-
 def test_next(key, expected) -> None:
     # arrange
     keyboard: Any = computer_keyboard
@@ -41,11 +40,11 @@ def test_next(key, expected) -> None:
     # assert
     assert action == expected
 
+
 @pytest.mark.parametrize("key,expected", [
     (' ', constants.DOWN_FAST),
     ('w', constants.ROTATE_R),
 ])
-
 def test_next_release(key, expected) -> None:
     # arrange
     keyboard: Any = computer_keyboard
@@ -81,6 +80,7 @@ def test_next_release(key, expected) -> None:
     # assert
     assert action == constants.NONE
     assert not movement.pressed[key]
+
 
 def test_next_none() -> None:
     # arrange
